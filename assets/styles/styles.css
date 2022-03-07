@@ -1,0 +1,15 @@
+/****************************
+        general
+*****************************/
+@import url('https://v1.fontapi.ir/css/Vazir');
+:root{
+    --bs-body-font-family:'Vazir';
+    --bs-primary:#2196f3;
+    --bs-secondary:#4c5c84
+    --bs-primary-rgb:33, 150, 243;
+    --bs-secondary-rgb:76, 92, 132;
+    --body-bg:#eceeef;
+}
+body{
+    background-color: var(--body-bg);
+}
