@@ -1,15 +1,134 @@
 /****************************
-        general
+            general
 *****************************/
-@import url('https://v1.fontapi.ir/css/Vazir');
-:root{
-    --bs-body-font-family:'Vazir';
-    --bs-primary:#2196f3;
-    --bs-secondary:#4c5c84
-    --bs-primary-rgb:33, 150, 243;
-    --bs-secondary-rgb:76, 92, 132;
-    --body-bg:#eceeef;
+@import url("https://v1.fontapi.ir/css/Vazir");
+:root {
+  --bs-body-font-family: "Vazir";
+  --bs-primary: #2196f3;
+  --bs-secondary: #4c5c84;
+  --bs-primary-rgb: 33, 150, 243;
+  --bs-secondary-rgb: 76, 92, 132;
+  --body-bg: #eceeef;
 }
-body{
-    background-color: var(--body-bg);
+html,
+:root {
+  direction: rtl;
+}
+.rounded-5 {
+  border-radius: 0.5rem;
+}
+body {
+  background-color: var(--body-bg);
+}
+
+/****************************
+            Header
+*****************************/
+.page-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.page-header .account-btn {
+}
+.page-header .account-text {
+  transition: all 1s;
+  width: 0;
+  height: 0;
+}
+@media (min-width: 575px) {
+  .page-header .account-text {
+    width: auto;
+    height: auto;
+  }
+}
+.page-header .brand-container{
+    width: 60%;
+}
+@media (min-width:568px) {
+    .page-header .brand-container{
+        width: auto;
+    }
+    
+}
+.page-header .navbar-circle-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-bg);
+  border: none;
+}
+.page-header .navbar-circle-btn:hover {
+  background-color: var(--bs-secondary);
+}
+.page-header form {
+  max-width: 450px;
+  margin: 0;
+}
+.page-header .input-group input {
+  background-color: var(--body-bg);
+  direction: rtl;
+  padding: 0.5rem 1rem;
+  padding-right: 2rem;
+}
+.page-header .input-group .search_submit-btn {
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  outline: none;
+  border: none;
+}
+.page-header .dropdown:hover .dropdown-menu:not(.mega-menu) {
+  display: block;
+}
+.page-header .nav-link {
+  color: var(--bs-secondary) !important;
+}
+.page-header .nav-link:hover{
+    color: var(--bs-primary)!important;
+}
+.page-header .dropdown-toggle {
+  color: var(--bs-secondary) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.page-header .dropdown-menu {
+  right: 0;
+  top: 100%;
+  left: initial;
+}
+.page-header .dropdown-menu .dropdown-item {
+  text-align: right;
+}
+.page-header .mega-menu {
+  width: 80vw;
+  right: 0;
+  transform: translateX(50%);
+  font-size: 0.9rem;
+}
+.page-header .mega-menu h3 {
+  font-size: inherit;
+  font-weight: bolder;
+  text-align: right;
+}
+.page-header .mega-menu-links > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.page-header .mega-menu-links ul li {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+  list-style: none;
+}
+.page-header .mega-menu-links ul li a{
+    color:rgb(0,0,0,.7);
+    text-decoration: none;
+    font-weight: 500;
+}
+.page-header .mega-menu-links ul li a:hover{
+    color:var(--bs-primary);
 }
