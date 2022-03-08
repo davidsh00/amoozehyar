@@ -26,25 +26,32 @@
     <title>AmoozeshYar</title>
   </head>
   <body>
+    <!-- start Page Header -->
     <header class="page-header bg-white">
       <div class="container">
+        <!-- Start navbar -->
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap">
           <div class="container-fluid">
-            <div
-              class="brand-container d-flex justify-content-between justify-content-sm-start"
+            <!-- toggle navbar btn-->
+            <button
+              class="navbar-toggler border-0 d-lg-none"
+              id="navToggleBtn"
+              type="button"
             >
-              <button class="navbar-toggler border-0 d-lg-none" id="navToggleBtn" type="button">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a
-                class="navbar-brand flex-shrink-0 d-flex  align-items-center gap-2"
-                href="/"
-                ><i
-                  class="fa-solid fa-chart-line bg-primary text-white p-2 rounded-5"
-                ></i>
-                <h2 class="mb-0 text-secondary h3">آموزشیار</h2></a
-              >
-            </div>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nabvar Brand -->
+            <a
+              class="navbar-brand flex-shrink-0 d-flex align-items-center gap-2"
+              href="/"
+              ><i
+                class="fa-solid fa-chart-line bg-primary text-white p-2 rounded-5"
+              ></i>
+              <h2 class="mb-0 text-secondary h3">آموزشیار</h2></a
+            >
+
+            <!-- navbar searchbox -->
             <form class="d-none d-lg-flex flex-grow-1 mx-3 me-5 w-auto">
               <div class="input-group">
                 <input class="form-control rounded-5" placeholder="جستجو..." />
@@ -57,20 +64,48 @@
               </div>
             </form>
 
-            <div class="left-nav-panel d-flex align-items-center">
+            <!-- navbar left-panel -->
+            <div
+              class="left-nav-panel d-flex align-items-center justify-content-end"
+            >
               <div class="d-none d-md-flex m-2 gap-2">
-                <a
-                  href="/pages/my-account.html"
-                  class="navbar-circle-btn rounded-circle btn btn-outline-dark"
-                >
-                  <i class="fa-solid fa-bell"></i>
-                </a>
-                <a
-                  href="/pages/cart.html"
-                  class="navbar-circle-btn rounded-circle btn btn-outline-dark"
-                >
-                  <i class="fa-solid fa-bag-shopping"></i>
-                </a>
+                <div class="dropdown">
+                  <a
+                    href="/pages/my-account.html"
+                    class="navbar-circle-btn rounded-circle btn btn-outline-dark"
+                  >
+                    <i class="fa-solid fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu text-end">
+                    <li class="dropdown-item-text text-nowrap">
+                      شما هیچ اعلان جدیدی دریافت نکرده اید.
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="/pages/cart.html"
+                    class="navbar-circle-btn rounded-circle btn btn-outline-dark"
+                  >
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge-btn badge bg-secondary position-absolute top-0 start-0">0</span>
+                  </a>
+                  <ul class="dropdown-menu text-end">
+                    <li
+                      class="dropdown-item-text d-flex justify-content-between align-items-center"
+                    >
+                  <div class="d-flex align-items-center gap-2 ms-5">
+
+                    <i class="fa-brands fa-shopify"></i>
+                    <span class="title">سبد خرید شما</span>
+                  </div>
+             
+                  <div class="store-count">
+                    <span class="badge  bg-secondary">0</span>
+                  </div>
+                  </li>
+                  </ul>
+                </div>
               </div>
               <button
                 class="account-btn btn btn-primary px-3 py-2 rounded-5 fw-bold d-flex justify-content-center align-items-center"
@@ -83,6 +118,7 @@
               </button>
             </div>
 
+            <!-- navbar collapse menu -->
             <div
               class="collapse navbar-collapse mt-4 border-top justify-content-center"
               id="navbarSupportedContent"
@@ -239,9 +275,12 @@
             </div>
           </div>
         </nav>
+        <!-- End navbar -->
       </div>
+
+      <!-- Start sidebar-nav -->
       <div
-        class="side-navbar   d-lg-none bg-white px-2 py-4 position-fixed vh-100 text-secondary overflow-hidden"
+        class="side-navbar d-lg-none bg-white px-2 py-4 position-fixed vh-100 text-secondary overflow-hidden"
       >
         <div class="side-navbar-scrollable h-100 overflow-auto">
           <div class="mx-auto text-center">
@@ -252,9 +291,9 @@
               <h2 class="mb-0 text-secondary h3">آموزشیار</h2>
             </a>
             <form>
-              <div class="input-group w-75 mx-auto">
+              <div class="input-group mx-auto">
                 <input
-                  class="form-control form-control-sm rounded-5 pe-2 ps-4"
+                  class="form-control form-control-sm m-2 rounded-5 pe-2 ps-4"
                   placeholder="جستجو..."
                 />
                 <button
@@ -315,7 +354,9 @@
           </ul>
         </div>
       </div>
+      <!-- End sidebar-nav -->
     </header>
+    <!-- End Page Header -->
 
     <!-- import bootstarp script -->
     <script
