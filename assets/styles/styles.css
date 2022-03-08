@@ -16,12 +16,25 @@ html,
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .rounded-5 {
   border-radius: 0.5rem;
 }
 body {
   background-color: var(--body-bg);
+}
+body > *:not(footer) {
+  margin-bottom: 2rem;
 }
 
 /****************************
@@ -37,15 +50,18 @@ body {
   width: 0;
   height: 0;
 }
+.page-header .left-nav-panel {
+  transition: all 1s;
+}
 @media (min-width: 576px) {
-  .page-header .left-nav-panel{
+  .page-header .left-nav-panel {
     flex-grow: 1;
   }
-@media (min-width: 992px) {
-  .page-header .left-nav-panel{
-    flex-grow: 0;
+  @media (min-width: 992px) {
+    .page-header .left-nav-panel {
+      flex-grow: 0;
+    }
   }
-}
   .page-header .account-text {
     width: auto;
     height: auto;
@@ -59,7 +75,7 @@ body {
   align-items: center;
   background-color: var(--body-bg);
   border: none;
-  padding:0;
+  padding: 0;
 }
 .page-header .navbar-circle-btn:hover {
   background-color: var(--bs-secondary);
@@ -138,7 +154,7 @@ body {
 .page-header .side-navbar {
   transition: all 1s;
   transform: translateX(100%);
-  right:0;
+  right: 0;
   top: 0;
   width: 25vw;
   min-width: 240px;
@@ -155,15 +171,80 @@ body {
 .page-header .side-navbar-scrollable::-webkit-scrollbar {
   display: none;
 }
-.page-header .left-nav-panel .dropdown ul{
+.page-header .left-nav-panel .dropdown ul {
   transform: translateX(50%);
-  top:100%;
+  top: 100%;
   width: max-content;
   max-width: 500px;
 }
-.page-header .left-nav-panel .navbar-circle-btn:hover>.cart-badge-btn{
-opacity: 0;
+.page-header
+  .left-nav-panel
+  .dropdown:hover
+  .navbar-circle-btn
+  > .cart-badge-btn {
+  opacity: 0;
 }
-.page-header .cart-badge-btn{
-  transform: translate(0,-30%);
+.page-header .cart-badge-btn {
+  transform: translate(0, -30%);
+}
+
+/****************************
+            Footer
+*****************************/
+footer {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+footer .footer-about {
+}
+footer .address-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer address p {
+  margin-bottom: 0;
+}
+footer .address-item i {
+  display: flex;
+  justify-content: center;
+  width: 10px;
+}
+
+footer .item-title::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+footer .footer-menu > li {
+  width: auto;
+}
+footer .footer-rss .input-group-text {
+  border: 0;
+  font-size: 0.8rem;
+  z-index: 4;
+  top: 0;
+  bottom: 0;
+background-color: transparent;
+}
+footer .footer-rss button.input-group-text{
+  width: 4rem;
+  left: 0;
+}
+footer .footer-rss input {
+  padding-left: 4.1rem;
+  padding-right: 2.4rem;
+  font-size: .9rem;
+}
+footer .envelope-icon{
+  font-size: 1.4rem!important;
+opacity: .7;
+}
+@media (min-width: 768px) {
 }
