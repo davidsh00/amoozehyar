@@ -11,7 +11,7 @@ bodyWrapper_Style = {
   top: 0,
   left: 0,
   zIndex: 1000,
-  transition:'all 1s',
+  transition:'opacity 1s',
   opacity:0
 
 

@@ -156,7 +156,7 @@ body > *:not(footer) {
   color: var(--bs-primary);
 }
 .page-header .side-navbar {
-  transition: all 1s;
+  transition: transform 1s;
   transform: translateX(100%);
   right: 0;
   top: 0;
