@@ -271,3 +271,13 @@ overflow: hidden;
 border-radius: 10%;
 background-color: rgb(255 255 255 / 8%);
 }
+@media (min-width:768px){
+  footer .footer-rss{
+    width: 100%;
+  }
+}
+@media (min-width:991px){
+  footer .footer-rss{
+    width: 33.3333333333%;
+  }
+}
