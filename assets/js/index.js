@@ -5,11 +5,11 @@ function cssStyle(element, style) {
 }
 bodyWrapper_Style = {
   background: "rgba(0,0,0,0.5)",
-  position: "absolute",
+  position: "fixed",
+  width:'100vw',
+  height:'100vh',
   top: 0,
   left: 0,
-  bottom: 0,
-  right: 0,
   zIndex: 1000,
   transition:'all 1s',
   opacity:0

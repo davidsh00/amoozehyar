@@ -21,6 +21,10 @@ a {
 a:hover {
   color: inherit;
 }
+img{
+  width: 100%;
+  height: 100%;
+}
 ul,
 li {
   padding: 0;
@@ -195,6 +199,7 @@ footer {
   font-size: 0.9rem;
   text-align: justify;
   line-height: 1.8;
+  background-color: #334155;
 }
 footer .footer-about {
 }
@@ -225,6 +230,19 @@ footer .item-title::before {
 footer .footer-menu > li {
   width: auto;
 }
+footer .footer-link::before{
+  content:"-";
+  display: inline-block;
+  overflow: hidden;
+  font-weight: bold;
+  transition: all .5s;
+  vertical-align: middle;
+  width: 0;
+
+}
+footer .footer-link:hover::before{
+width: .5rem;
+}
 footer .footer-rss .input-group-text {
   border: 0;
   font-size: 0.8rem;
@@ -246,5 +264,10 @@ footer .envelope-icon{
   font-size: 1.4rem!important;
 opacity: .7;
 }
-@media (min-width: 768px) {
+footer .trust-box .trust-item{
+width: 100px;
+height: 100px;
+overflow: hidden;
+border-radius: 10%;
+background-color: rgb(255 255 255 / 8%);
 }
