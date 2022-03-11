@@ -199,6 +199,8 @@ footer {
   font-size: 0.9rem;
   text-align: justify;
   line-height: 1.8;
+}
+footer .footer-top{
   background-color: #334155;
 }
 footer .footer-about {
@@ -280,4 +282,8 @@ background-color: rgb(255 255 255 / 8%);
   footer .footer-rss{
     width: 33.3333333333%;
   }
+}
+footer .social-item:hover{
+  color:var(--shc,black)!important;
+
 }
