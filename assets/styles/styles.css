@@ -322,7 +322,7 @@ main section.main-banner:hover img {
         main-btn_cat
 ************************/
 main section.main-btn_cat .card {
-  background-image: url(/assets/images/symbols/cat-tiles-bg.png);
+  background-image: url(../images/symbols/cat-tiles-bg.png);
   padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
