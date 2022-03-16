@@ -426,3 +426,29 @@ main section.main-new_courses .card-subtitle img {
 main section.main-new_courses .card-confirm {
   color: var(--bs-primary);
 }
+main section.main-instagram{
+  background:linear-gradient(to left, #f3642c,#db356b,#9233c1);
+  margin-top: 100px;
+}
+main section.main-instagram .instagram-btn{
+  color:#9233c1;
+
+}
+main section.main-instagram .instagram-btn:hover{
+ background-color: transparent;
+ color:white;
+}
+main section.main-instagram .instagram-img{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,10%);
+  width: 300px;
+  height: 200px;
+
+}
+main section.main-instagram .instagram_img-wrapper{
+  height: 50px;
+  width: 250px;
+  position: relative;
+}
