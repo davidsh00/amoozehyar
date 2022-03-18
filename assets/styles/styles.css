@@ -468,21 +468,11 @@ main section.main-articles .card .card-img-overlay {
   transition: all 0.4s;
 }
 main section.main-articles .card .card-img-overlay {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.7) 10%,
-    rgba(22, 208, 221, 0.4),
-    rgba(0, 0, 0, 0.7) 30%,
-    rgba(0, 0, 0, 0.7) 50%,
-    transparent 60%
-  );
+  background:linear-gradient(0deg,rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.9) 10%,transparent);
   transition: all 0.4s;
-  background-size: 100% 150%;
-  background-position-y: 10%;
 }
 main section.main-articles .card:hover .card-img-overlay {
-  background-position: 0% 90%;
-  background-size: 100% 900%;
+  background:linear-gradient(0deg,rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.9) 10%,rgba(6, 157, 216, 0.5));
 }
 
 main section.main-articles .card .card-overlay-description-box {
@@ -560,4 +550,11 @@ main section.main-articles .card:hover .card-overlay-description-box {
 }
 .circular-wrapper .inner-circle:nth-child(5) {
   animation-delay: 4000ms;
+}
+
+/*************************************
+        podcast-section
+***************************************/
+main section.main-podcast a:hover{
+color: white !important;
 }
