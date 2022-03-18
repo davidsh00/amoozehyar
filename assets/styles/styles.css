@@ -39,6 +39,9 @@ li {
 .text-sm {
   font-size: 0.7rem;
 }
+.text-justify {
+  text-align: justify;
+}
 body {
   background-color: var(--body-bg);
 }
@@ -296,6 +299,9 @@ footer .social-item:hover {
 main > .container > section {
   margin-bottom: 2rem;
   overflow: hidden;
+}
+.main-title{
+  margin-bottom: 0;
 }
 .main-title::before {
   display: inline-block;
