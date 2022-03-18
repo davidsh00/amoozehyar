@@ -300,7 +300,7 @@ main > .container > section {
   margin-bottom: 2rem;
   overflow: hidden;
 }
-.main-title{
+.main-title {
   margin-bottom: 0;
 }
 .main-title::before {
@@ -470,15 +470,31 @@ main section.main-articles .card-img {
   border-radius: 0.5rem;
   height: 100%;
 }
+main section.main-articles img {
+  max-height: 200px;
+}
+main section.main-articles .ps-md-2 img {
+  max-height: 400px;
+}
 main section.main-articles .card .card-img-overlay {
   transition: all 0.4s;
 }
 main section.main-articles .card .card-img-overlay {
-  background:linear-gradient(0deg,rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.9) 10%,transparent);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent
+  );
   transition: all 0.4s;
 }
 main section.main-articles .card:hover .card-img-overlay {
-  background:linear-gradient(0deg,rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.9) 10%,rgba(6, 157, 216, 0.5));
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(6, 157, 216, 0.5)
+  );
 }
 
 main section.main-articles .card .card-overlay-description-box {
@@ -501,7 +517,6 @@ main section.main-articles .card:hover .card-overlay-description-box {
     transform: translate(10%, -10%);
   }
 }
-
 
 /*************************************
         circular image
@@ -561,6 +576,13 @@ main section.main-articles .card:hover .card-overlay-description-box {
 /*************************************
         podcast-section
 ***************************************/
-main section.main-podcast a:hover{
-color: white !important;
+main section.main-podcast a:hover {
+  color: white !important;
+}
+
+/*************************************
+        about section
+***************************************/
+main section.main-about .about-text p {
+  line-height: 2rem;
 }
