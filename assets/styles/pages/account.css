@@ -1,0 +1,36 @@
+section.log .tabbar input[name="sign"]:checked + form {
+  display: flex !important;
+}
+section.log .tabbar label[for="signIn"],
+section.log .tabbar label[for="signUp"] {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+section.log .tabbar input[name="sign"]:checked + form::before {
+  content: "";
+  border-bottom: 2px solid blue;
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  width: 50%;
+  height: 1rem;
+  transition: all 0.4s;
+}
+section.log .tabbar input[id="signUp"]:checked + form::before {
+  right: 50%;
+}
+section.log .tabbar input[name="sign"] {
+  display: none;
+}
+section.log {
+  padding-bottom: 25rem;
+}
+section.log form {
+  position: absolute;
+  padding: 2rem;
+  right: 0;
+  left: 0;
+  top: 4rem;
+  text-align: right;
+  flex-direction: column;
+}

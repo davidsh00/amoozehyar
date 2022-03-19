@@ -2,267 +2,292 @@
         main-btn_cat
 ************************/
 main section.main-btn_cat .card {
-    background-image: url(./../../images/symbols/cat-tiles-bg.png);
-    padding: 1.5rem 1rem;
-    display: flex;
-    align-items: center;
-    color: white;
-    transition: all 0.2s;
-  }
-  main section.main-btn_cat .card:hover {
-    opacity: 0.9;
-  }
-  /************************
+  background-image: url(./../../images/symbols/cat-tiles-bg.png);
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: all 0.2s;
+}
+main section.main-btn_cat .card:hover {
+  opacity: 0.9;
+}
+/************************
           main-new_courses
   ************************/
-  main section.main-new_courses .card {
-    flex-shrink: 0;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: white;
+main section.main-new_courses .card {
+  flex-shrink: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+main section.main-new_courses .card .card-img-top {
+  background: linear-gradient(
+    120deg,
+    var(--fc, rgb(59, 59, 59)),
+    var(--sc, #ccc)
+  );
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.main-new_courses .card .card-img-img {
+  width: 100%;
+  height: 100px;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.main-new_courses .card .card-title {
+  font-size: 1rem;
+}
+main section.main-new_courses .card .card-subtitle {
+  font-size: 0.8rem;
+}
+main section.main-new_courses .card .card-footer,
+main section.main-new_courses .card .card-body {
+  color: var(--bs-secondary);
+}
+main section.main-new_courses .card .card-footer {
+  background-color: inherit;
+}
+main section.main-new_courses .card-play {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+main section.main-new_courses .card-play:hover {
+  background-color: white;
+}
+main section.main-new_courses .card-status {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.2rem;
+}
+main section.main-new_courses .card-off {
+  position: absolute;
+  transform: translate(-10%, -20%) rotate(315deg);
+  line-height: initial;
+  top: 0;
+  left: 0;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2196f3;
+  transition: all 0.2s;
+}
+main section.main-new_courses .card:hover .card-off {
+  transform: translate(-10%, -20%) rotate(360deg);
+}
+main section.main-new_courses .card-subtitle img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main section.main-new_courses .card-confirm {
+  color: var(--bs-primary);
+}
+main section.main-instagram {
+  background: linear-gradient(to left, #f3642c, #db356b, #9233c1);
+  margin-top: 200px;
+}
+main section.main-instagram .instagram-btn {
+  color: #9233c1;
+}
+main section.main-instagram .instagram-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+main section.main-instagram .instagram-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 300px;
+  height: 200px;
+}
+main section.main-instagram .instagram_img-wrapper {
+  height: 50px;
+  width: 250px;
+  position: relative;
+  margin: auto;
+}
+main section.main-articles .card {
+  height: 100%;
+  border-radius: 1rem;
+}
+main section.main-articles .card-img {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+main section.main-articles img {
+  max-height: 200px;
+}
+main section.main-articles .ps-md-2 img {
+  max-height: 400px;
+}
+main section.main-articles .card .card-img-overlay {
+  transition: all 0.4s;
+}
+main section.main-articles .card .card-img-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent
+  );
+  transition: all 0.4s;
+}
+main section.main-articles .card:hover .card-img-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(6, 157, 216, 0.5)
+  );
+}
+
+main section.main-articles .card .card-overlay-description-box {
+  transition: all 0.4s;
+}
+main section.main-articles .card:hover .card-overlay-description-box {
+  transform: translateY(-10%);
+}
+@media (min-width: 1300px) {
+  main
+    section.main-articles
+    .card
+    .card-overlay-description-box.translate-x-10 {
+    transform: translateX(10%);
   }
-  main section.main-new_courses .card .card-img-top {
-    background: linear-gradient(
-      120deg,
-      var(--fc, rgb(59, 59, 59)),
-      var(--sc, #ccc)
-    );
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  main
+    section.main-articles
+    .card:hover
+    .card-overlay-description-box.translate-x-10 {
+    transform: translate(10%, -10%);
   }
-  main section.main-new_courses .card .card-img-img {
-    width: 100%;
-    height: 100px;
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main section.main-new_courses .card .card-title {
-    font-size: 1rem;
-  }
-  main section.main-new_courses .card .card-subtitle {
-    font-size: 0.8rem;
-  }
-  main section.main-new_courses .card .card-footer,
-  main section.main-new_courses .card .card-body {
-    color: var(--bs-secondary);
-  }
-  main section.main-new_courses .card .card-footer {
-    background-color: inherit;
-  }
-  main section.main-new_courses .card-play {
-    width: 1.75rem;
-    height: 1.75rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    background-color: rgb(0, 0, 0, 0.4);
-    border-radius: 50%;
-    vertical-align: middle;
-  }
-  main section.main-new_courses .card-play:hover {
-    background-color: white;
-  }
-  main section.main-new_courses .card-status {
-    font-size: 0.6rem;
-    padding: 0.1rem 0.5rem;
-    border-radius: 0.2rem;
-  }
-  main section.main-new_courses .card-off {
-    position: absolute;
-    transform: translate(-10%, -20%) rotate(315deg);
-    line-height: initial;
-    top: 0;
-    left: 0;
-    font-size: 0.7rem;
-    font-weight: bolder;
-    width: 3.5rem;
-    height: 3.5rem;
-    border: 4px solid white;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #2196f3;
-    transition: all 0.2s;
-  }
-  main section.main-new_courses .card:hover .card-off {
-    transform: translate(-10%, -20%) rotate(360deg);
-  }
-  main section.main-new_courses .card-subtitle img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  main section.main-new_courses .card-confirm {
-    color: var(--bs-primary);
-  }
-  main section.main-instagram {
-    background: linear-gradient(to left, #f3642c, #db356b, #9233c1);
-    margin-top: 200px;
-  }
-  main section.main-instagram .instagram-btn {
-    color: #9233c1;
-  }
-  main section.main-instagram .instagram-btn:hover {
-    background-color: transparent;
-    color: white;
-  }
-  main section.main-instagram .instagram-img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    width: 300px;
-    height: 200px;
-  }
-  main section.main-instagram .instagram_img-wrapper {
-    height: 50px;
-    width: 250px;
-    position: relative;
-    margin: auto;
-  }
-  main section.main-articles .card {
-    height: 100%;
-    border-radius: 1rem;
-  }
-  main section.main-articles .card-img {
-    overflow: hidden;
-    border-radius: 0.5rem;
-    height: 100%;
-  }
-  main section.main-articles img {
-    max-height: 200px;
-  }
-  main section.main-articles .ps-md-2 img {
-    max-height: 400px;
-  }
-  main section.main-articles .card .card-img-overlay {
-    transition: all 0.4s;
-  }
-  main section.main-articles .card .card-img-overlay {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.9) 10%,
-      rgba(0, 0, 0, 0.9) 10%,
-      transparent
-    );
-    transition: all 0.4s;
-  }
-  main section.main-articles .card:hover .card-img-overlay {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.9) 10%,
-      rgba(0, 0, 0, 0.9) 10%,
-      rgba(6, 157, 216, 0.5)
-    );
-  }
-  
-  main section.main-articles .card .card-overlay-description-box {
-    transition: all 0.4s;
-  }
-  main section.main-articles .card:hover .card-overlay-description-box {
-    transform: translateY(-10%);
-  }
-  @media (min-width: 1300px) {
-    main
-      section.main-articles
-      .card
-      .card-overlay-description-box.translate-x-10 {
-      transform: translateX(10%);
-    }
-    main
-      section.main-articles
-      .card:hover
-      .card-overlay-description-box.translate-x-10 {
-      transform: translate(10%, -10%);
-    }
-  }
-  
-  /*************************************
+}
+
+/*************************************
           circular image
   ***************************************/
-  @keyframes circle-effect {
-    0% {
-      transform: scale(0);
-      opacity: 100%;
-    }
-    100% {
-      transform: scale(125%);
-      opacity: 0;
-    }
-  }
-  
-  .circular-wrapper {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .circular-wrapper .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .circular-wrapper .inner-circle {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(26, 143, 221, 0.534);
-    border-radius: 50%;
+@keyframes circle-effect {
+  0% {
     transform: scale(0);
-    animation: circle-effect 5s normal infinite;
+    opacity: 100%;
   }
-  .circular-wrapper .inner-circle:nth-child(1) {
-    animation-delay: 0ms;
+  100% {
+    transform: scale(125%);
+    opacity: 0;
   }
-  .circular-wrapper .inner-circle:nth-child(2) {
-    animation-delay: 1000ms;
-  }
-  .circular-wrapper .inner-circle:nth-child(3) {
-    animation-delay: 2000ms;
-  }
-  .circular-wrapper .inner-circle:nth-child(4) {
-    animation-delay: 3000ms;
-  }
-  .circular-wrapper .inner-circle:nth-child(5) {
-    animation-delay: 4000ms;
-  }
-  
-  /*************************************
+}
+
+.circular-wrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circular-wrapper .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circular-wrapper .inner-circle {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 143, 221, 0.534);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: circle-effect 5s normal infinite;
+}
+.circular-wrapper .inner-circle:nth-child(1) {
+  animation-delay: 0ms;
+}
+.circular-wrapper .inner-circle:nth-child(2) {
+  animation-delay: 1000ms;
+}
+.circular-wrapper .inner-circle:nth-child(3) {
+  animation-delay: 2000ms;
+}
+.circular-wrapper .inner-circle:nth-child(4) {
+  animation-delay: 3000ms;
+}
+.circular-wrapper .inner-circle:nth-child(5) {
+  animation-delay: 4000ms;
+}
+
+/*************************************
           podcast-section
   ***************************************/
-  main section.main-podcast a:hover {
-    color: white !important;
-  }
-  
-  /*************************************
+main section.main-podcast a:hover {
+  color: white !important;
+}
+
+/*************************************
           about section
   ***************************************/
-  main section.main-about .about-text p {
-    line-height: 2rem;
-  }
-  
-  
-  
-  /*************************************
+main section.main-about .about-text p {
+  line-height: 2rem;
+}
+
+/*************************************
           review section
   ***************************************/
-  main section.main-reviews  {
+main section.main-reviews {
   height: max-content;
   line-height: 1rem;
-  font-size: .8rem;
-  }
+  font-size: 0.8rem;
+}
+
+main section.main-reviews .swiper-button-prev,
+main section.main-reviews .swiper-button-next {
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(0deg, #eee, #bbb);
+  border: 1px solid #aaa;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: black;
+}
+main section.main-reviews .swiper-button-prev::after {
+  content: "<";
+  font-family: vazir;
+  font-size: 1rem;
+}
+main section.main-reviews .swiper-button-next::after {
+  content: ">";
+  font-family: vazir;
+  font-size: 1rem;
+}
+}
