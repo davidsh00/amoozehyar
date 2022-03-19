@@ -118,7 +118,8 @@
                   </ul>
                 </div>
               </div>
-              <button
+              <a
+                href="./../pages/my-account.html"
                 class="account-btn btn btn-primary px-3 py-2 rounded-5 fw-bold d-flex justify-content-center align-items-center"
               >
                 <i class="fas fa-user"></i>
@@ -126,7 +127,7 @@
                   class="account-text me-sm-2 d-inline-block overflow-hidden"
                   >حساب کاربری</span
                 >
-              </button>
+              </a>
             </div>
 
             <!-- navbar collapse menu -->
@@ -393,7 +394,7 @@
                   </div>
                 </div>
                 <div
-                  class="course-details col-lg-8 text-center text-lg-end d-flex flex-column gap-4"
+                  class="course-details col-lg-8 text-center text-lg-end d-flex flex-column gap-2"
                 >
                   <h2 class="card-title">دوره آموزشی کسب درآمد از یوتیوب</h2>
                   <p class="card-subtitle text-end">
@@ -401,7 +402,7 @@
                     بهترین فرصت ساختن درآمد دلاری در ایران استفاده کنید
                   </p>
                   <div
-                    class="row align-items-center justify-content-md-between"
+                    class="row align-items-center justify-content-md-between mt-3"
                   >
                     <div class="col-md-auto">
                       <a href="#" class="btn fw-bold btn-primary px-4 py-2 mb-3"
@@ -459,8 +460,8 @@
         </section>
         <!-- End course section -->
 
-        <div class="d-flex gap-4">
-          <div class="col-12 col-lg-8 main-content d-flex gap-4 flex-column">
+        <div class="row">
+          <div class="col-12 col-lg-9 main-content d-flex gap-4 flex-column">
             <!-- Start coures-introduce -->
             <section
               class="course-introduce section-box d-flex flex-column gap-4"
@@ -504,12 +505,12 @@
                     data-bs-parent="#courseSessions"
                   >
                     <p class="px-2 mb-0">
-                      برای دانلود این قسمت روی 
+                      برای دانلود این قسمت روی
                       <a href="#" class="text-primary">این لینک کلیک کنید.</a>
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item ">
+                <div class="accordion-item">
                   <button
                     class="accordion-button private collapsed d-flex justify-content-between"
                     data-bs-toggle="collapse"
@@ -538,49 +539,193 @@
               </div>
             </section>
             <!-- End coures-sessions -->
-
+            <!-- Start reviews section -->
             <section class="reviews section-box">
-              
               <div class="comments-list border-bottom">
-                <div class="main-title">دیدگاه ها
+                <div class="main-title">
+                  دیدگاه ها
                   <span class="badge bg-primary rounded-pill">0</span>
                 </div>
                 <div class="comments mb-3"></div>
               </div>
-              <div class="comments-new mt-3">
+              <div class="comments-new mt-3 p-4">
                 <h4 class="text-black">ارسال دیدگاه جدید</h4>
-                <p>نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت  گذاری شده اند *</p>
+                <p>
+                  نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت گذاری
+                  شده اند *
+                </p>
 
                 <form class="mt-3">
                   <div class="">
                     <label for="commentMsg">دیدگاه *</label>
-                    <textarea type="text" id="commentMsg" rows="10" placeholder="متن مورد نظر خود را بنویسید" class="rounded-5 form-control"></textarea>
+                    <textarea
+                      type="text"
+                      id="commentMsg"
+                      rows="10"
+                      placeholder="متن مورد نظر خود را بنویسید"
+                      class="rounded-5 form-control"
+                    ></textarea>
                   </div>
                   <div class="row row-cols-sm-2 mt-3">
                     <div>
                       <label for="commentName">نام *</label>
-                      <input type="text" class="form-control  rounded-5" placeholder="" id="commentName">
+                      <input
+                        type="text"
+                        class="form-control rounded-5"
+                        placeholder=""
+                        id="commentName"
+                      />
                     </div>
                     <div>
                       <label for="commentEmail">ایمیل *</label>
-                      <input type="email" class="form-control  rounded-5" placeholder="ایمیل خود را وارد کنید" id="commentEmail">
+                      <input
+                        type="email"
+                        class="form-control rounded-5"
+                        placeholder="ایمیل خود را وارد کنید"
+                        id="commentEmail"
+                      />
                     </div>
                   </div>
-                  <div class="mt-3">
-                    <input type="checkbox" id="saveInfo">
+                  <div class="mt-3 d-flex align-items-baseline gap-3">
+                    <input type="checkbox" id="saveInfo" />
                     <label for="saveInfo">
-                      ذخیره نام، ایمیل و وبسایت من در مرورگر برای زمانی که دوباره دیدگاهی می‌نویسم.
+                      ذخیره نام، ایمیل و وبسایت من در مرورگر برای زمانی که
+                      دوباره دیدگاهی می‌نویسم.
                     </label>
-
                   </div>
                   <div class="mt-3">
-                    <button type="submit" class="btn btn-primary w-100">ارسال دیدگاه</button>
+                    <button type="submit" class="btn btn-primary w-100">
+                      ارسال دیدگاه
+                    </button>
                   </div>
                 </form>
               </div>
             </section>
+            <!-- End reviews section -->
           </div>
-          <div class="col-12 col-lg-4 main-sidebar"></div>
+          <div class="col-12 col-lg-3 main-sidebar">
+            <!-- Start course-info -->
+            <section class="course-info border-5 mt-4 mt-lg-0 mb-4">
+              <ul class="list-group list-group-flush fw-bold gap-3">
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50">نوع دوره</span>
+                  <span class="item-answer">غیرحضوری</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fab fa-leanpub"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50">سطح دوره</span>
+                  <span class="item-answer">۰ تا ۱۰۰</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-clock"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50">مدت دوره</span>
+                  <span class="item-answer">۲ ساعت</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-book"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50">پیش نیاز</span>
+                  <span class="item-answer">ندازد</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-film"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50"
+                    >تعداد جلسات</span
+                  >
+                  <span class="item-answer">۲</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-file-zipper"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50">حجم</span>
+                  <span class="item-answer">۵۰۰ مگابایت</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-headset"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50"
+                    >روش پیشتیبانی</span
+                  >
+                  <span class="item-answer">تیکت و تلفن</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-retweet"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50"
+                    >آخرین بروزرسانی</span
+                  >
+                  <span class="item-answer">۲۲ اسفند ۱۴۰۰</span>
+                </li>
+                <li
+                  class="list-group-item d-flex gap-2 align-items-center text-secondary rounded-5"
+                >
+                  <span class="item-icon">
+                    <i class="fas fa-circle-check"></i>
+                  </span>
+                  <span class="item-ask text-muted opacity-50"
+                    >مورد اختصاصی</span
+                  >
+                  <span class="item-answer">تست</span>
+                </li>
+              </ul>
+            </section>
+            <!-- End course-info -->
+            <!-- Start course-creator -->
+            <section class="course-creator section-box text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="creator-info w-100">
+                  <img
+                    class="col-3 rounded-circle"
+                    src="./../assets/images/user/user-cours.jpg"
+                    alt="user-img"
+                  />
+                  <h4 class="h6 my-2 lh-1">
+                    علی حاج محمدی
+                    <i class="fas fa-circle-check"></i>
+                  </h4>
+                  <span class="text-sm lh-1 text-muted">مدرس دوره</span>
+                </div>
+                <div>
+                  <p class="text-justify">
+                    علی حاجی‌محمدی بنیان‌گذار همیاروردپرس و همیارآکادمی است.
+                    بزرگترین دغدغه‌ی او در این چند سال فرهنگ‌سازی کسب‌و‌کار
+                    اینترنتی در ایران بوده است. او همچنین داور جشنواره وب و
+                    موبایل ایران است.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- End course-creator -->
+          </div>
         </div>
       </div>
     </main>
