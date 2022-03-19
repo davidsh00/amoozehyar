@@ -1,0 +1,747 @@
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import fontAwesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- import swiperjs library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- import bootstrap style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- import general style -->
+    <link rel="stylesheet" href="./../assets/styles/styles.css" />
+    <!-- import page style -->
+    <link rel="stylesheet" href="./../assets/styles/pages/product.css" />
+
+    <title>AmoozeshYar</title>
+  </head>
+  <body>
+    <!-- Start Page Header -->
+    <header class="page-header bg-white">
+      <div class="container">
+        <!-- Start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap">
+          <div class="container-fluid">
+            <!-- toggle navbar btn-->
+            <button
+              class="navbar-toggler border-0 d-lg-none"
+              id="navToggleBtn"
+              type="button"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nabvar Brand -->
+            <a
+              class="navbar-brand flex-shrink-0 d-flex align-items-center gap-2"
+              href="/"
+              ><i
+                class="fa-solid fa-chart-line bg-primary text-white p-2 rounded-5"
+              ></i>
+              <h2 class="mb-0 text-secondary h3">آموزشیار</h2></a
+            >
+
+            <!-- navbar searchbox -->
+            <form class="d-none d-lg-flex flex-grow-1 mx-3 me-5 w-auto">
+              <div class="input-group">
+                <input class="form-control rounded-5" placeholder="جستجو..." />
+                <button
+                  type="submit"
+                  class="search_submit-btn position-absolute text-secondary p-0"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+
+            <!-- navbar left-panel -->
+            <div
+              class="left-nav-panel d-flex align-items-center justify-content-end"
+            >
+              <div class="d-none d-md-flex m-2 gap-2">
+                <div class="dropdown">
+                  <a
+                    href="/pages/my-account.html"
+                    class="navbar-circle-btn rounded-circle btn btn-outline-dark"
+                  >
+                    <i class="fa-solid fa-bell"></i>
+                  </a>
+                  <ul class="dropdown-menu text-end">
+                    <li class="dropdown-item-text text-nowrap">
+                      شما هیچ اعلان جدیدی دریافت نکرده اید.
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <a
+                    href="/pages/cart.html"
+                    class="navbar-circle-btn rounded-circle btn btn-outline-dark"
+                  >
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span
+                      class="cart-badge-btn badge bg-secondary position-absolute top-0 start-0"
+                      >0</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu text-end">
+                    <li
+                      class="dropdown-item-text d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex align-items-center gap-2 ms-5">
+                        <i class="fa-brands fa-shopify"></i>
+                        <span class="title">سبد خرید شما</span>
+                      </div>
+
+                      <div class="store-count">
+                        <span class="badge bg-secondary">0</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="account-btn btn btn-primary px-3 py-2 rounded-5 fw-bold d-flex justify-content-center align-items-center"
+              >
+                <i class="fas fa-user"></i>
+                <span
+                  class="account-text me-sm-2 d-inline-block overflow-hidden"
+                  >حساب کاربری</span
+                >
+              </button>
+            </div>
+
+            <!-- navbar collapse menu -->
+            <div
+              class="collapse navbar-collapse mt-4 border-top justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav mb-2 mb-lg-0 justify-content-between gap-2 py-2"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >صفحه اصلی</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/" class="dropdown-item active">صفحه اصلی 1</a>
+                    </li>
+                    <li>
+                      <a href="/pages/index2.html" class="dropdown-item"
+                        >صفحه اصلی ۲</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/pages/index3.html" class="dropdown-item"
+                        >صفحه اصلی ۳</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تماس با ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">برگه نمونه</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">درباره ما</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >مگامنو</a
+                  >
+                  <ul class="dropdown-menu mega-menu p-4">
+                    <li class="d-flex w-100 mega-menu-titrs">
+                      <h3 class="col-2">طراحی سایت</h3>
+                      <h3 class="col-2">برنامه نویسی موبایل</h3>
+                      <h3 class="col-2">دروس دانشگاهی</h3>
+                      <h3 class="col-2">هوش مصنوعی</h3>
+                      <h3 class="col-2">برنامه نویسی ویندوز</h3>
+                      <h3 class="col-2">پایگاه داده</h3>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li class="d-flex w-100 mega-menu-links">
+                      <ul class="col-2">
+                        <li><a href="#">برنامه نویسی وب</a></li>
+                        <li><a href="#"> آموزش Asp.Net</a></li>
+                        <li><a href="#">آموزش Go</a></li>
+                        <li><a href="#">آموزش Node.js</a></li>
+                        <li><a href="#">آموزش PHP</a></li>
+                        <li><a href="#">آموزش لاراول</a></li>
+                        <li><a href="#">آموزش قالب</a></li>
+                        <li><a href="#">آموزش سئو</a></li>
+                      </ul>
+                      <ul class="col-2">
+                        <li><a href="#">آموزش ios</a></li>
+                        <li><a href="#">آموزش swift</a></li>
+                        <li><a href="#">آموزش اندروید</a></li>
+                        <li><a href="#">آموزش java</a></li>
+                        <li><a href="#">آموزش کاتلین</a></li>
+                        <li><a href="#">آموزش ReactNative</a></li>
+                      </ul>
+                      <ul class="col-2">
+                        <li><a href="#">آموزش c++</a></li>
+                        <li><a href="#">آموزش متلب</a></li>
+                        <li><a href="#">شیمی</a></li>
+                        <li><a href="#">فیزیک</a></li>
+                        <li><a href="#">پزشکی</a></li>
+                        <li><a href="#">جراحی</a></li>
+                      </ul>
+                      <ul class="col-2">
+                        <li><a href="#">بهینه سازی</a></li>
+                        <li><a href="#">پردازش تصاویر</a></li>
+                        <li><a href="#">شبکه ژنتیک</a></li>
+                        <li><a href="#">شبکه فازی</a></li>
+                        <li><a href="#">شبکه های عصبی</a></li>
+                        <li><a href="#">یادگیری ماشین</a></li>
+                      </ul>
+                      <ul class="col-2">
+                        <li><a href="#">آموزش پایتون</a></li>
+                        <li><a href="#">آموزش جاوا</a></li>
+                        <li><a href="#">آموزش دلفی</a></li>
+                        <li><a href="#">آموزش سی شارپ</a></li>
+                      </ul>
+                      <ul class="col-2">
+                        <li><a href="#">آموزش MySQL</a></li>
+                        <li><a href="#">آموزش NoSQL</a></li>
+                        <li><a href="#">آموزش SQL Server</a></li>
+                        <li><a href="#">اصول بانک اطلاعاتی</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">قوانین</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >فرمت نوشته ها</a
+                  >
+
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">مقالات</a></li>
+                    <li><a href="#" class="dropdown-item">ویدیوها</a></li>
+                    <li><a href="#" class="dropdown-item">پادکست ها</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">بلاگ</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >صفحات</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item">نمونه پروفایل مدرس</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">نمونه دوره تکمیل شده</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"
+                        >نمونه دوره درحال برگزاری</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"
+                        >نمونه دوره طراحی شده با المنتور</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End navbar -->
+      </div>
+
+      <!-- Start sidebar-nav -->
+      <div
+        class="side-navbar d-lg-none bg-white px-2 py-4 position-fixed vh-100 text-secondary overflow-hidden"
+      >
+        <div class="side-navbar-scrollable h-100 overflow-auto">
+          <div class="mx-auto text-center">
+            <a class="d-inline-flex align-items-center gap-2 mb-4" href="/">
+              <i
+                class="fa-solid fa-chart-line bg-primary text-white p-2 rounded-5"
+              ></i>
+              <h2 class="mb-0 text-secondary h3">آموزشیار</h2>
+            </a>
+            <form>
+              <div class="input-group mx-auto">
+                <input
+                  class="form-control form-control-sm m-2 rounded-5 pe-2 ps-4"
+                  placeholder="جستجو..."
+                />
+                <button
+                  type="submit"
+                  class="search_submit-btn position-absolute text-secondary p-0"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="dropdown-divider my-4"></div>
+          <a
+            class="cart-item d-flex align-items-center gap-2 px-4 text-secondary"
+            href="pages/cart.html"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h6 class="mb-0">سبد خرید</h6>
+          </a>
+          <div class="dropdown-divider my-4"></div>
+          <ul class="nav flex-column p-2">
+            <li class="nav-item">
+              <a href="#" class="nav-link">برگه نمونه</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/blog.html" class="nav-link">بلاگ</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/cart.html" class="nav-link">پرداخت</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/contact-us.html" class="nav-link">تماس با ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/my-account.html" class="nav-link"
+                >حساب کاربری من</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="page/contact-us" class="nav-link">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/courses.html" class="nav-link">دوره ها</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/cart.html" class="nav-link">سبد خرید</a>
+            </li>
+            <li class="nav-item"><a href="/" class="nav-link">صفحه اصلی</a></li>
+            <li class="nav-item">
+              <a href="pages/index2.html" class="nav-link">صفحه اصلی ۲</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/index3.html" class="nav-link">صفحه اصلی ۳</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/rules.html" class="nav-link">قوانین</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End sidebar-nav -->
+    </header>
+    <!-- End Page Header -->
+
+    <!-- Start page Main -->
+    <main>
+      <div class="container text-justify">
+        <!-- Start course section -->
+        <section class="main-course">
+          <div class="card">
+            <div class="card-body">
+              <div class="row flex-lg-row-reverse gy-4">
+                <div class="course-img col-lg-4">
+                  <div
+                    class="card-img-top card"
+                    style="--fc: #f44037; --sc: #f50152"
+                  >
+                    <div class="card-img-img">
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <p class="card-subtitle">دوره آموزشی</p>
+                    <p class="card-title">کسب درآمد از یوتیوب</p>
+                    <div class="card-img-overlay p-2">
+                      <span class="card-status bg-dark">تکمیل شده</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="course-details col-lg-8 text-center text-lg-end d-flex flex-column gap-4"
+                >
+                  <h2 class="card-title">دوره آموزشی کسب درآمد از یوتیوب</h2>
+                  <p class="card-subtitle text-end">
+                    با دوره کسب درآمد از یوتیوب، بدون دانستن زبان و مسائل فنی از
+                    بهترین فرصت ساختن درآمد دلاری در ایران استفاده کنید
+                  </p>
+                  <div
+                    class="row align-items-center justify-content-md-between"
+                  >
+                    <div class="col-md-auto">
+                      <a href="#" class="btn fw-bold btn-primary px-4 py-2 mb-3"
+                        ><i class="fas fa-user-graduate"></i>
+                        <span>ثبت نام در دوره</span>
+                      </a>
+                      <a
+                        href="#courseSessions"
+                        class="btn fw-bold btn-primary px-4 py-2 mb-3"
+                        ><i class="fas fa-angle-down"></i>
+                        <span>جلسات دوره</span>
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-auto d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div class="card-price">
+                        <span class="text-decoration-line-through text-muted"
+                          >۱,۰۰۰,۰۰۰</span
+                        >
+                        <span class="">۱۰,۰۰۰</span>
+                        <span class="fw-bold">تومان</span>
+                      </div>
+                      <div
+                        class="card-off d-flex bg-primary text-white rounded-circle fw-bold text-sm flex-column align-items-center justify-content-center"
+                      >
+                        <span>۷۰٪</span>
+                        <span>تخفیف</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between opacity-50 align-items-center pb-0 h5 mb-0"
+            >
+              <ul class="d-flex gap-3">
+                <li>
+                  <i class="fas fa-user-graduate"></i>
+                  <span class="value">5</span>
+                </li>
+                <li>
+                  <i class="fas fa-comment"></i>
+                  <span class="value">0</span>
+                </li>
+              </ul>
+              <div>
+                <a href="#">
+                  <i class="fas fa-share-nodes"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End course section -->
+
+        <div class="d-flex gap-4">
+          <div class="col-12 col-lg-8 main-content d-flex gap-4 flex-column">
+            <!-- Start coures-introduce -->
+            <section
+              class="course-introduce section-box d-flex flex-column gap-4"
+            >
+              <div class="main-title text-primary">معرفی دوره</div>
+              <ul class="text-black opacity-75">
+                <li>تو اینستاگرام فعالیت می‌کنی؟</li>
+                <li>به تولید محتوا علاقه داری؟</li>
+                <li>به درآمد دلاری چطور؟</li>
+              </ul>
+              <p>
+                یوتیوب، بهترین فرصت ما در ایران برای داشتن درآمد دلاریه. فرصتی
+                که تمام اینفلوئنسرهای اینستاگرام و بسیاری از خوانندگان ایران رو
+                به سمت این پلتفرم برده. این یعنی هر روز مخاطبین یوتیوب در ایران
+                بیشتر می‌شه و فرصت درآمدزایی (فقط با تولید محتوا) از یوتیوب برای
+                ما ایرانی‌ها جذاب‌تر می‌شه. با دوره‌ی ۰ تا ۱۰۰ کسب درآمد از
+                یوتیوب محتوا رو تبدیل به دلار کن.
+              </p>
+            </section>
+            <!-- End coures-introduce -->
+
+            <!-- Start coures-sessions -->
+            <section class="course-sessions section-box" id="courseSessions">
+              <div class="main-title text-primary">جلسات دوره</div>
+
+              <div class="accordion-flush">
+                <div class="accordion-item border-bottom">
+                  <button
+                    class="accordion-button collapsed d-flex justify-content-between"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#acc1"
+                  >
+                    <div>
+                      <i class="fas fa-circle-play"></i>
+                      <span>جلسه اول</span>
+                    </div>
+                  </button>
+                  <div
+                    class="accordion-collapse collapse"
+                    id="acc1"
+                    data-bs-parent="#courseSessions"
+                  >
+                    <p class="px-2 mb-0">
+                      برای دانلود این قسمت روی 
+                      <a href="#" class="text-primary">این لینک کلیک کنید.</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item ">
+                  <button
+                    class="accordion-button private collapsed d-flex justify-content-between"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#acc2"
+                  >
+                    <div>
+                      <i class="fas fa-circle-play"></i>
+                      <span>جلسه دوم</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-lock"></i>
+                      <span>خصوصی</span>
+                    </div>
+                  </button>
+                  <div
+                    class="accordion-collapse collapse"
+                    id="acc2"
+                    data-bs-parent="#courseSessions"
+                  >
+                    <p class="px-2 mb-0">
+                      برای دسترسی به محتوای این بخش ابتدا باید در دوره
+                      <a href="#" class="text-primary">ثبت نام کنید.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End coures-sessions -->
+
+            <section class="reviews section-box">
+              
+              <div class="comments-list border-bottom">
+                <div class="main-title">دیدگاه ها
+                  <span class="badge bg-primary rounded-pill">0</span>
+                </div>
+                <div class="comments mb-3"></div>
+              </div>
+              <div class="comments-new mt-3">
+                <h4 class="text-black">ارسال دیدگاه جدید</h4>
+                <p>نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت  گذاری شده اند *</p>
+
+                <form class="mt-3">
+                  <div class="">
+                    <label for="commentMsg">دیدگاه *</label>
+                    <textarea type="text" id="commentMsg" rows="10" placeholder="متن مورد نظر خود را بنویسید" class="form-control"></textarea>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-lg-4 main-sidebar"></div>
+        </div>
+      </div>
+    </main>
+    <!-- End page Main -->
+
+    <!-- Start Page Footer -->
+    <footer>
+      <div class="footer-top container text-white py-5 rounded-5">
+        <div
+          class="layout row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 gy-md-2 gx-md-5"
+        >
+          <div class="footer-about">
+            <a
+              class="footer-brand flex-shrink-0 d-flex justify-content-center mb-4 align-items-center gap-2"
+              href="/"
+              ><i
+                class="fa-solid fa-chart-line bg-primary text-white p-1 rounded-5"
+              ></i>
+              <span class="mb-0 h5 text-white">آموزشیار</span></a
+            >
+            <p class="">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+            <address>
+              <div class="address-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>تهران، کوچه موفقیت، برج انگیزه، طبقه ۷</p>
+              </div>
+              <div class="address-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <a href="tel:09123456789">۰۹۱۲۳۴۵۶۷۸۹ </a>
+              </div>
+              <div class="address-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:info@gmail.com">info@gmail.com </a>
+              </div>
+            </address>
+          </div>
+          <div class="footer-sections text-md-center">
+            <div class="d-inline-flex flex-column align-items-start">
+              <div class="item-title fw-bolder mb-4 d-inline-block">
+                دسترسی سریع
+              </div>
+              <ul
+                class="footer-menu row d-inline-flex list-unstyled p-0 m-0 g-0 gap-4 text-end"
+              >
+                <li>
+                  <ul>
+                    <li><a href="#" class="footer-link">برگه نمونه</a></li>
+                    <li><a href="#" class="footer-link">پرداخت</a></li>
+                    <li><a href="#" class="footer-link">حساب کاربری من</a></li>
+                    <li><a href="#" class="footer-link">دوره ها</a></li>
+                    <li><a href="#" class="footer-link">صفحه اصلی ۲</a></li>
+                    <li><a href="#" class="footer-link">صفحه اصلی ۳</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#" class="footer-link">بلاگ</a></li>
+                    <li><a href="#" class="footer-link">تماس با ما</a></li>
+                    <li><a href="#" class="footer-link">درباره ما</a></li>
+                    <li><a href="#" class="footer-link">سبد خرید</a></li>
+                    <li><a href="#" class="footer-link">صفحه اصلی </a></li>
+                    <li><a href="#" class="footer-link">قوانین</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-rss">
+            <div
+              class="row row-cols-md-2 row-cols-lg-1 flex-md-nowrap gap-md-5 flex-lg-wrap gap-lg-0"
+            >
+              <div class="share-email mb-4">
+                <div class="item-title fw-bold mb-4">خبرنامه</div>
+                <div>
+                  <p>
+                    ایمیل خود را ثبت کنید تا از آخرین تخقیف های سایت با خبر
+                    باشید.
+                  </p>
+                  <form class="input-group overflow-hidden rounded-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="ایمیل خود را وارد کنید"
+                    />
+                    <button
+                      type="submit"
+                      class="input-group-text bg-primary text-white position-absolute"
+                    >
+                      اشتراک
+                    </button>
+                    <i
+                      class="input-group-text envelope-icon fas fa-envelope end-0 position-absolute"
+                    ></i>
+                  </form>
+                </div>
+              </div>
+              <div class="trust-symbol">
+                <div class="item-title fw-bold mb-4">نمادها</div>
+                <div
+                  class="trust-box row align-items-center g-0 row-cols-auto g-2 row-cols-md-3 row-cols-xl-3"
+                >
+                  <div>
+                    <div class="trust-item">
+                      <img
+                        src="./../assets/images/symbols/trust1.png"
+                        alt="trust-image"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="trust-item">
+                      <img
+                        src="./../assets/images/symbols/trust2.png"
+                        alt="trust-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <div
+          class="d-flex flex-column py-3 justify-content-center align-items-center flex-lg-row justify-content-lg-between text-secondary gap-2"
+        >
+          <div class="">&copy; تمامی حقوق برای آموزش یار محفوظ است.</div>
+          <ul class="footer-social d-flex gap-3 h4">
+            <li>
+              <a href="#" class="social-item telegram" style="--shc: #1f90c9"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-item whatsapp" style="--shc: #1fc927"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-item instagram" style="--shc: #b51fc9"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-item linkedin" style="--shc: #1f60c9"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-item pinterest" style="--shc: #c91f27"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-item github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Page Footer -->
+
+    <!-- import bootstarp script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- import general scripts -->
+    <script src="./../assets/js/general.js"></script>
+    <!-- import Page scripts -->
+    <script src="./../assets/js/pages/product.js"></script>
+  </body>
+</html>
