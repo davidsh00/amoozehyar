@@ -554,7 +554,27 @@
                 <form class="mt-3">
                   <div class="">
                     <label for="commentMsg">دیدگاه *</label>
-                    <textarea type="text" id="commentMsg" rows="10" placeholder="متن مورد نظر خود را بنویسید" class="form-control"></textarea>
+                    <textarea type="text" id="commentMsg" rows="10" placeholder="متن مورد نظر خود را بنویسید" class="rounded-5 form-control"></textarea>
+                  </div>
+                  <div class="row row-cols-sm-2 mt-3">
+                    <div>
+                      <label for="commentName">نام *</label>
+                      <input type="text" class="form-control  rounded-5" placeholder="" id="commentName">
+                    </div>
+                    <div>
+                      <label for="commentEmail">ایمیل *</label>
+                      <input type="email" class="form-control  rounded-5" placeholder="ایمیل خود را وارد کنید" id="commentEmail">
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <input type="checkbox" id="saveInfo">
+                    <label for="saveInfo">
+                      ذخیره نام، ایمیل و وبسایت من در مرورگر برای زمانی که دوباره دیدگاهی می‌نویسم.
+                    </label>
+
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" class="btn btn-primary w-100">ارسال دیدگاه</button>
                   </div>
                 </form>
               </div>

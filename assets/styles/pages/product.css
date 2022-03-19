@@ -89,4 +89,14 @@ section.course-sessions .accordion-collapse{
   background-color: #e6e4e456;
 }
 
+/************************
+        reviews
+***************************/
+section.reviews .form-control{
+  box-shadow: none;
+  border-width: .1rem;
+}
+section.reviews .form-control:focus{
+ box-shadow: 0 0 0 2px #2196f3;
+}
 
