@@ -586,3 +586,12 @@ main section.main-podcast a:hover {
 main section.main-about .about-text p {
   line-height: 2rem;
 }
+
+
+
+/*************************************
+        review section
+***************************************/
+main section.main-reviews  {
+height: max-content;
+}

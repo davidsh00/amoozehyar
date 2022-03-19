@@ -11,6 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- import swiperjs library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- import bootstrap style -->
     <link
@@ -423,184 +430,208 @@
                 <i class="fas fa-left-long align-middle"></i></button
             ></a>
           </div>
-          <div
-            class="courses-box row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"
-          >
-            <div class="course-item">
-              <a href="#" class="card">
-                <div
-                  class="card-img-top card"
-                  style="--fc: #f44037; --sc: #f50152"
-                >
-                  <div class="card-img-img">
-                    <i class="fa-brands fa-youtube"></i>
-                  </div>
-                  <p class="card-subtitle">دوره آموزشی</p>
-                  <p class="card-title">کسب درآمد از یوتیوب</p>
-                  <div class="card-img-overlay p-2">
-                    <div class="btn btn-outline-light border-0 card-play ml-4">
-                      <i class="fa-solid fa-play"></i>
-                    </div>
-                    <span class="card-status bg-dark">تکمیل شده</span>
-                    <div class="card-off">
-                      <span>۷۰٪</span>
-                      <span>تخفیف</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">دوره آموزش کسب درآمد از یوتیوب</h5>
-                  <div
-                    class="card-subtitle d-inline-flex align-items-center gap-2"
-                  >
-                    <img
-                      src="assets/images/user/user-cours.jpg"
-                      class="card-writter"
-                      alt="user-creator"
-                    />
-                    <span>علی حاج محمدی</span>
-                    <div class="card-confirm">
-                      <i class="fa-solid fa-check-to-slot"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="card-details d-flex gap-2">
-                    <div class="details-student">
-                      <i class="fas fa-user-graduate"></i>
-                      <span class="student-number">5</span>
-                    </div>
-                    <div class="details-comment">
-                      <i class="fas fa-comment"></i>
-                      <span class="comment-number">0</span>
-                    </div>
-                  </div>
-                  <div class="card-price">
-                    <span class="text-decoration-line-through text-muted"
-                      >۱,۰۰۰,۰۰۰</span
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="course-item">
+                  <a href="#" class="card">
+                    <div
+                      class="card-img-top card"
+                      style="--fc: #f44037; --sc: #f50152"
                     >
-                    <span class="">۱۰,۰۰۰</span>
-                    <span class="fw-bold">تومان</span>
-                  </div>
+                      <div class="card-img-img">
+                        <i class="fa-brands fa-youtube"></i>
+                      </div>
+                      <p class="card-subtitle">دوره آموزشی</p>
+                      <p class="card-title">کسب درآمد از یوتیوب</p>
+                      <div class="card-img-overlay p-2">
+                        <div
+                          class="btn btn-outline-light border-0 card-play ml-4"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="card-status bg-dark">تکمیل شده</span>
+                        <div class="card-off">
+                          <span>۷۰٪</span>
+                          <span>تخفیف</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">دوره آموزش کسب درآمد از یوتیوب</h5>
+                      <div
+                        class="card-subtitle d-inline-flex align-items-center gap-2"
+                      >
+                        <img
+                          src="assets/images/user/user-cours.jpg"
+                          class="card-writter"
+                          alt="user-creator"
+                        />
+                        <span>علی حاج محمدی</span>
+                        <div class="card-confirm">
+                          <i class="fa-solid fa-check-to-slot"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card-details d-flex gap-2">
+                        <div class="details-student">
+                          <i class="fas fa-user-graduate"></i>
+                          <span class="student-number">5</span>
+                        </div>
+                        <div class="details-comment">
+                          <i class="fas fa-comment"></i>
+                          <span class="comment-number">0</span>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="text-decoration-line-through text-muted"
+                          >۱,۰۰۰,۰۰۰</span
+                        >
+                        <span class="">۱۰,۰۰۰</span>
+                        <span class="fw-bold">تومان</span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-item">
+                  <a href="#" class="card">
+                    <div
+                      class="card-img-top card"
+                      style="--fc: #ff6f42; --sc: #e63b35"
+                    >
+                      <div class="card-img-img">
+                        <i class="fa-solid fa-headset"></i>
+                      </div>
+                      <p class="card-subtitle">دوره آموزشی</p>
+                      <p class="card-title">لایو مارکتینگ</p>
+                      <div class="card-img-overlay p-2">
+                        <div
+                          class="btn btn-outline-light border-0 card-play ml-4"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="card-status bg-success"
+                          >درحال برگزاری</span
+                        >
+                        <div class="card-off">
+                          <span>۷۰٪</span>
+                          <span>تخفیف</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">دوره آموزش لایو مارکتینگ</h5>
+                      <div
+                        class="card-subtitle d-inline-flex align-items-center gap-2"
+                      >
+                        <img
+                          src="assets/images/user/user-cours.jpg"
+                          class="card-writter"
+                          alt="user-creator"
+                        />
+                        <span>علی حاج محمدی</span>
+                        <div class="card-confirm">
+                          <i class="fa-solid fa-check-to-slot"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card-details d-flex gap-2">
+                        <div class="details-student">
+                          <i class="fas fa-user-graduate"></i>
+                          <span class="student-number">6</span>
+                        </div>
+                        <div class="details-comment">
+                          <i class="fas fa-comment"></i>
+                          <span class="comment-number">2</span>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="fw-bold text-success">رایگان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="course-item">
+                  <a href="#" class="card">
+                    <div
+                      class="card-img-top card"
+                      style="--fc: #4050b5; --sc: #5d36b1"
+                    >
+                      <div class="card-img-img">
+                        <i class="fa-solid fa-rocket"></i>
+                      </div>
+                      <p class="card-title">وبمستران هوشمند</p>
+                      <div class="card-img-overlay p-2">
+                        <div
+                          class="btn btn-outline-light border-0 card-play ml-4"
+                        >
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="card-status bg-danger">پیش فروش</span>
+                        <div class="card-off">
+                          <span>۷۰٪</span>
+                          <span>تخفیف</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">دوره جامع وبمستران هوشمند ۲۱</h5>
+                      <div
+                        class="card-subtitle d-inline-flex align-items-center gap-2"
+                      >
+                        <img
+                          src="assets/images/user/user-cours.jpg"
+                          class="card-writter"
+                          alt="user-creator"
+                        />
+                        <span>علی حاج محمدی</span>
+                        <div class="card-confirm">
+                          <i class="fa-solid fa-check-to-slot"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer d-flex justify-content-between align-items-center"
+                    >
+                      <div class="card-details d-flex gap-2">
+                        <div class="details-student">
+                          <i class="fas fa-user-graduate"></i>
+                          <span class="student-number">6</span>
+                        </div>
+                        <div class="details-comment">
+                          <i class="fas fa-comment"></i>
+                          <span class="comment-number">2</span>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span>۹,۰۰۰,۰۰۰</span>
+                        <span class="fw-bold">تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="course-item">
-              <a href="#" class="card">
-                <div
-                  class="card-img-top card"
-                  style="--fc: #ff6f42; --sc: #e63b35"
-                >
-                  <div class="card-img-img">
-                    <i class="fa-solid fa-headset"></i>
-                  </div>
-                  <p class="card-subtitle">دوره آموزشی</p>
-                  <p class="card-title">لایو مارکتینگ</p>
-                  <div class="card-img-overlay p-2">
-                    <div class="btn btn-outline-light border-0 card-play ml-4">
-                      <i class="fa-solid fa-play"></i>
-                    </div>
-                    <span class="card-status bg-success">درحال برگزاری</span>
-                    <div class="card-off">
-                      <span>۷۰٪</span>
-                      <span>تخفیف</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">دوره آموزش لایو مارکتینگ</h5>
-                  <div
-                    class="card-subtitle d-inline-flex align-items-center gap-2"
-                  >
-                    <img
-                      src="assets/images/user/user-cours.jpg"
-                      class="card-writter"
-                      alt="user-creator"
-                    />
-                    <span>علی حاج محمدی</span>
-                    <div class="card-confirm">
-                      <i class="fa-solid fa-check-to-slot"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="card-details d-flex gap-2">
-                    <div class="details-student">
-                      <i class="fas fa-user-graduate"></i>
-                      <span class="student-number">6</span>
-                    </div>
-                    <div class="details-comment">
-                      <i class="fas fa-comment"></i>
-                      <span class="comment-number">2</span>
-                    </div>
-                  </div>
-                  <div class="card-price">
-                    <span class="fw-bold text-success">رایگان</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="course-item">
-              <a href="#" class="card">
-                <div
-                  class="card-img-top card"
-                  style="--fc: #4050b5; --sc: #5d36b1"
-                >
-                  <div class="card-img-img">
-                    <i class="fa-solid fa-rocket"></i>
-                  </div>
-                  <p class="card-title">وبمستران هوشمند</p>
-                  <div class="card-img-overlay p-2">
-                    <div class="btn btn-outline-light border-0 card-play ml-4">
-                      <i class="fa-solid fa-play"></i>
-                    </div>
-                    <span class="card-status bg-danger">پیش فروش</span>
-                    <div class="card-off">
-                      <span>۷۰٪</span>
-                      <span>تخفیف</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">دوره جامع وبمستران هوشمند ۲۱</h5>
-                  <div
-                    class="card-subtitle d-inline-flex align-items-center gap-2"
-                  >
-                    <img
-                      src="assets/images/user/user-cours.jpg"
-                      class="card-writter"
-                      alt="user-creator"
-                    />
-                    <span>علی حاج محمدی</span>
-                    <div class="card-confirm">
-                      <i class="fa-solid fa-check-to-slot"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-footer d-flex justify-content-between align-items-center"
-                >
-                  <div class="card-details d-flex gap-2">
-                    <div class="details-student">
-                      <i class="fas fa-user-graduate"></i>
-                      <span class="student-number">6</span>
-                    </div>
-                    <div class="details-comment">
-                      <i class="fas fa-comment"></i>
-                      <span class="comment-number">2</span>
-                    </div>
-                  </div>
-                  <div class="card-price">
-                    <span>۹,۰۰۰,۰۰۰</span>
-                    <span class="fw-bold">تومان</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
         <!--End main-new_courses-->
@@ -924,102 +955,140 @@
                 <i class="fas fa-left-long align-middle"></i></button
             ></a>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-            <div>
-              <div class="card">
-                <div class="card-header d-flex gap-2 align-items-center">
-                  <img
-                    class="col-2 rounded-circle"
-                    src="./assets/images/user/user.png"
-                    alt="user-image"
-                  />
-                  <div class="col-10 text-sm">
-                    <div class="review-creator h6 mb-0">حافظ حاج شیرازی</div>
-                    <div class="review-job">کارشناس محصول ژاکت</div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header d-flex gap-2 align-items-center">
+                    <img
+                      class="col-2 rounded-circle"
+                      src="./assets/images/user/user.png"
+                      alt="user-image"
+                    />
+                    <div class="col-10 text-sm">
+                      <div class="review-creator h6 mb-0">حافظ حاج شیرازی</div>
+                      <div class="review-job">کارشناس محصول ژاکت</div>
+                    </div>
+                  </div>
+                  <div class="card-body text-justify">
+                    <p>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطر آنچنان که لازم است.لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                      استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                      و مجله در ستون و سطر آنچنان که لازم است.لورم ایپسوم متن
+                      ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                    </p>
                   </div>
                 </div>
-                <div class="card-body text-justify">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطر آنچنان که لازم است.لورم ایپسوم متن
-                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                  </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header d-flex gap-2 align-items-center">
+                    <img
+                      class="col-2 rounded-circle"
+                      src="./assets/images/user/user.png"
+                      alt="user-image"
+                    />
+                    <div class="col-10 text-sm">
+                      <div class="review-creator h6 mb-0">علی مولایی</div>
+                      <div class="review-job">مسئول فروش</div>
+                    </div>
+                  </div>
+                  <div class="card-body text-justify">
+                    <p>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطر آنچنان که لازم است.لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header d-flex gap-2 align-items-center">
+                    <img
+                      class="col-2 rounded-circle"
+                      src="./assets/images/user/user.png"
+                      alt="user-image"
+                    />
+                    <div class="col-10 text-sm">
+                      <div class="review-creator h6 mb-0">علی فدائی</div>
+                      <div class="review-job">امور مالی</div>
+                    </div>
+                  </div>
+                  <div class="card-body text-justify">
+                    <p>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطر آنچنان که لازم است.لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header d-flex gap-2 align-items-center">
+                    <img
+                      class="col-2 rounded-circle"
+                      src="./assets/images/user/user.png"
+                      alt="user-image"
+                    />
+                    <div class="col-10 text-sm">
+                      <div class="review-creator h6 mb-0">عل بیگی</div>
+                      <div class="review-job">برنامه نویس فرانت</div>
+                    </div>
+                  </div>
+                  <div class="card-body text-justify">
+                    <p>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطر آنچنان که لازم است.لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-header d-flex gap-2 align-items-center">
+                    <img
+                      class="col-2 rounded-circle"
+                      src="./assets/images/user/user.png"
+                      alt="user-image"
+                    />
+                    <div class="col-10 text-sm">
+                      <div class="review-creator h6 mb-0">مهندس حسین</div>
+                      <div class="review-job">برنامه نویس بک اند</div>
+                    </div>
+                  </div>
+                  <div class="card-body text-justify">
+                    <p>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطر آنچنان که لازم است.لورم
+                      ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="card">
-                <div class="card-header d-flex gap-2 align-items-center">
-                  <img
-                    class="col-2 rounded-circle"
-                    src="./assets/images/user/user.png"
-                    alt="user-image"
-                  />
-                  <div class="col-10 text-sm">
-                    <div class="review-creator h6 mb-0">حافظ حاج شیرازی</div>
-                    <div class="review-job">کارشناس محصول ژاکت</div>
-                  </div>
-                </div>
-                <div class="card-body text-justify">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطر آنچنان که لازم است.لورم ایپسوم متن
-                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="card">
-                <div class="card-header d-flex gap-2 align-items-center">
-                  <img
-                    class="col-2 rounded-circle"
-                    src="./assets/images/user/user.png"
-                    alt="user-image"
-                  />
-                  <div class="col-10 text-sm">
-                    <div class="review-creator h6 mb-0">حافظ حاج شیرازی</div>
-                    <div class="review-job">کارشناس محصول ژاکت</div>
-                  </div>
-                </div>
-                <div class="card-body text-justify">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطر آنچنان که لازم است.لورم ایپسوم متن
-                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="card">
-                <div class="card-header d-flex gap-2 align-items-center">
-                  <img
-                    class="col-2 rounded-circle"
-                    src="./assets/images/user/user.png"
-                    alt="user-image"
-                  />
-                  <div class="col-10 text-sm">
-                    <div class="review-creator h6 mb-0">حافظ حاج شیرازی</div>
-                    <div class="review-job">کارشناس محصول ژاکت</div>
-                  </div>
-                </div>
-                <div class="card-body text-justify">
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطر آنچنان که لازم است.لورم ایپسوم متن
-                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                  </p>
-                </div>
-              </div>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
-        <!--End main-comments-->
+        <!--End main-reviews-->
       </div>
     </main>
     <!-- End page Main -->
@@ -1197,7 +1266,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- import general scripts -->
+    <script src="assets/js/general.js"></script>
     <!-- import Page scripts -->
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/pages/index.js"></script>
   </body>
 </html>
