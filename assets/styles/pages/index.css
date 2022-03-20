@@ -20,22 +20,19 @@ main section.main-new_courses .card {
   padding: 1rem;
   border-radius: 1rem;
   color: white;
+  
 }
 main section.main-new_courses .card .card-img-top {
-  background: linear-gradient(
-    120deg,
-    var(--fc, rgb(59, 59, 59)),
-    var(--sc, #ccc)
-  );
   width: 100%;
-  height: 200px;
+   /* height: 250px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 main section.main-new_courses .card .card-img-img {
   width: 100%;
-  height: 100px;
+  height: 100%;
   font-size: 5rem;
   display: flex;
   align-items: center;

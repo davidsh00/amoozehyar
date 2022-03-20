@@ -1,10 +1,9 @@
-.badge{
+.badge {
   width: 1.5rem;
   height: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
 }
 /************************
           main-course
@@ -20,21 +19,17 @@ main section.main-course .card-off {
   line-height: 1rem;
 }
 main section.main-course .card .card-img-top {
-  background: linear-gradient(
-    120deg,
-    var(--fc, rgb(59, 59, 59)),
-    var(--sc, #ccc)
-  );
+  padding: 0;
   color: white;
   width: 100%;
-  height: 200px;
+  /* height: 250px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 main section.main-course .card .card-img-img {
   width: 100%;
-  height: 100px;
+  height: 100%;
   font-size: 5rem;
   display: flex;
   align-items: center;
@@ -67,36 +62,35 @@ main section.main-course .card-confirm {
 /************************
         course-sessions
 ***************************/
-section.course-sessions .accordion-button::after{
+section.course-sessions .accordion-button::after {
   margin-left: 0;
 }
-section.course-sessions .accordion-button.private::after{
-content: none;
+section.course-sessions .accordion-button.private::after {
+  content: none;
 }
-section.course-sessions .accordion-button{
-outline: none;
-border:0;
-box-shadow: none;
-color:var(--bs-secondary)
+section.course-sessions .accordion-button {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  color: var(--bs-secondary);
 }
-section.course-sessions .accordion-button:hover{
-background-color: #e6e4e456;
-}
-section.course-sessions .accordion-button:not(.collapsed){
+section.course-sessions .accordion-button:hover {
   background-color: #e6e4e456;
 }
-section.course-sessions .accordion-collapse{
+section.course-sessions .accordion-button:not(.collapsed) {
+  background-color: #e6e4e456;
+}
+section.course-sessions .accordion-collapse {
   background-color: #e6e4e456;
 }
 
 /************************
         reviews
 ***************************/
-section.reviews .form-control{
+section.reviews .form-control {
   box-shadow: none;
-  border-width: .1rem;
+  border-width: 0.1rem;
 }
-section.reviews .form-control:focus{
- box-shadow: 0 0 0 2px #2196f3;
+section.reviews .form-control:focus {
+  box-shadow: 0 0 0 2px #2196f3;
 }
-
